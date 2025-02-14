@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import com.example.demo.dto.UserSearchRequest;
 import com.example.demo.entity.User;
@@ -8,6 +9,7 @@ import com.example.demo.entity.User;
 /**
  * ユーザー情報 Mapper
  */
+@Repository
 @Mapper
 public interface UserMapper {
     /**

@@ -12,11 +12,15 @@ import com.example.demo.repository.UserMapper;
  */
 @Service
 public class UserService {
+//	private final UserMapper userMapper;
     /**
      * ユーザー情報 Mapper
      */
     @Autowired
     private UserMapper userMapper;
+//    public UserService(UserMapper userMapper) {
+//        this.userMapper = userMapper;
+//    }
 
     /**
      * ユーザー情報検索
@@ -25,5 +29,8 @@ public class UserService {
      */
     public User search(UserSearchRequest userSearchRequest) {
         return userMapper.search(userSearchRequest);
+//    }
+//    public User searchUser(UserSearchRequest request) {
+//        return userMapper.search(request);
     }
 }
